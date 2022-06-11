@@ -1,0 +1,132 @@
+body{
+
+margin: 0px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li{
+
+list-style: none;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+transition: all 1s ease;
+margin-left: 20px;
+}
+li:hover{
+
+    color: blue;
+
+}
+ul{
+float: right;
+margin: 0px;
+margin-right: 30px;
+padding: 0px;
+
+
+}
+.navbar{
+
+    background:rgb(2, 9, 53);
+    padding:20px;
+
+}
+.logo{
+
+    display: inline-block;
+    color: red;
+    position: relative;
+    left: 40px;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.btn{
+
+    color: #fff;
+    float: right;
+    display: none;
+}
+
+
+.fas{
+
+    cursor: pointer;
+    font-size: 23px;
+}
+#check{
+
+    display: none;
+}
+
+
+@media(max-width:800px){
+
+    .inner-content{
+
+        z-index: -132
+
+    }
+
+
+    .btn{
+
+    display: block;
+    color: #fff;
+    position: fixed;
+}
+.navbar{
+
+    z-index: 44;
+}
+
+ul{
+
+    display: block;
+    background: rgb(2, 9, 53);
+    position: fixed;
+    width: 100%;
+    top: -1000px;
+    left: 0px;
+    transition: all .7s ease;
+    margin-top: 10px;
+
+}
+
+li{
+
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#check:checked ~ ul{
+
+    width: 100%;
+    top: 45px;
+    z-index: 0;
+}
+
+
+}
+
+.fa-caret-down{
+
+    font-size: 14px;
+    transform: rotate(-90deg)
+}
+
+a{
+
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.inner-content{
+
+    padding:20px 0px;
+    width: 100%;
+    overflow: auto;
+}
